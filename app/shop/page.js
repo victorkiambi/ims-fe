@@ -1,5 +1,5 @@
 'use client';
-import {GetProducts} from "../api/products/route";
+import {GET} from "../api/products/route";
 import {useCart} from "../context/CartContext";
 import {useEffect, useState} from "react";
 
@@ -10,7 +10,7 @@ export default  function Shop() {
     useEffect(() => {
         const fetchProducts = async () => {
             try {
-                const data = await GetProducts();
+                const data = await GET();
                 setProducts(data.products);
             } catch (error) {
                 console.error("Failed to fetch products:", error);
