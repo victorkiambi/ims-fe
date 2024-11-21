@@ -117,7 +117,7 @@ export default  function Shop() {
                             {/*    </span>*/}
 
                             {/*    <div className="flex items-center justify-end gap-1">*/}
-                            {/*        <div id="tooltip-quick-look" role="tooltip"*/}
+                            {/*        <div [id]="tooltip-quick-look" role="tooltip"*/}
                             {/*             className="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"*/}
                             {/*             data-popper-placement="top">*/}
                             {/*            Quick look*/}
@@ -134,7 +134,7 @@ export default  function Shop() {
                             {/*                      d="M12 6C6.5 1 1 8 5.8 13l6.2 7 6.2-7C23 8 17.5 1 12 6Z"/>*/}
                             {/*            </svg>*/}
                             {/*        </button>*/}
-                            {/*        <div id="tooltip-add-to-favorites" role="tooltip"*/}
+                            {/*        <div [id]="tooltip-add-to-favorites" role="tooltip"*/}
                             {/*             className="tooltip invisible absolute z-10 inline-block rounded-lg bg-gray-900 px-3 py-2 text-sm font-medium text-white opacity-0 shadow-sm transition-opacity duration-300 dark:bg-gray-700"*/}
                             {/*             data-popper-placement="top">*/}
                             {/*            Add to favorites*/}

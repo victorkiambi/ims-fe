@@ -1,9 +1,9 @@
 import ProductCard from "@/components/product/ProductCard";
-import {GetProducts} from "@/app/api/products/route";
+import {GET} from "@/app/api/products/route";
 
 export default async function ProductPage() {
     try {
-        const products = await GetProducts();
+        const products = await GET();
         return (
             <section>
                 <div className="container grid grid-cols-1 gap-4 md:grid-cols-4">

@@ -1,11 +1,10 @@
-import {GetProduct} from "../../api/products/route";
+import {GET} from "../../api/products/[id]/route";
 
 export default async function ProductDetailsPage({ params }) {
     const { id } = await params;
 
     // Fetch the product by ID
-    const product = await GetProduct(id);
-    // const product = products.find((p) => p.id === parseInt(id, 10));
+    const product = await GET(id);
 
     // Handle product not found
     if (!product) {
